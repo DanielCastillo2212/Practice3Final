@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_tipo_movimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo de Movimiento"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentTop="true" />
+
+    <RadioGroup
+        android:id="@+id/rg_tipo_movimiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_tipo_movimiento"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_ingreso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingreso" />
+
+        <RadioButton
+            android:id="@+id/rb_gasto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gasto" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_cantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cantidad"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/rg_tipo_movimiento" />
+
+    <EditText
+        android:id="@+id/et_cantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese la cantidad"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/tv_cantidad" />
+
+    <TextView
+        android:id="@+id/tv_motivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Motivo"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/et_cantidad" />
+
+    <EditText
+        android:id="@+id/et_motivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el motivo"
+        android:layout_below="@id/tv_motivo" />
+
+    <TextView
+        android:id="@+id/tv_latitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitud"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/et_motivo" />
+
+    <EditText
+        android:id="@+id/et_latitud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese la latitud"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/tv_latitud" />
+
+    <TextView
+        android:id="@+id/tv_longitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitud"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/et_latitud" />
+
+    <EditText
+        android:id="@+id/et_longitud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese la longitud"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/tv_longitud" />
+
+    <TextView
+        android:id="@+id/tv_url_imagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="URL de la Imagen"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/et_longitud" />
+
+    <EditText
+        android:id="@+id/et_url_imagen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese la URL de la imagen"
+        android:layout_below="@id/tv_url_imagen" />
+
+    <Button
+        android:id="@+id/btn_guardar_movimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar Movimiento"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/et_url_imagen"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

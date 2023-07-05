@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp">
+
+    <TextView
+        android:id="@+id/tv_cantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cantidad" />
+
+    <TextView
+        android:id="@+id/tv_motivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Motivo" />
+
+    <TextView
+        android:id="@+id/tv_tipo_movimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo de Movimiento" />
+
+    <TextView
+        android:id="@+id/tv_latitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitud" />
+
+    <TextView
+        android:id="@+id/tv_longitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitud" />
+
+    <TextView
+        android:id="@+id/tv_url_imagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="URL de la Imagen" />
+
+</LinearLayout>
